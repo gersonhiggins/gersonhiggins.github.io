@@ -11,6 +11,7 @@ a {
   text-decoration: none;
 }
 
+
 @media only screen and (min-width: 1200px) {
   .introbox {
     width: 100%;
@@ -1857,6 +1858,10 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    min-width: 375;
+    overflow-x: hidden;
+  }
   .welcome {
     display: flex;
   }
@@ -1868,6 +1873,7 @@ a {
     background-color: #fff;
     border-bottom-left-radius: 80px;
     margin-bottom: 130px;
+    overflow-x: hidden;
   }
 
   .background {
@@ -1877,12 +1883,9 @@ a {
     left: 0;
     z-index: 1;
     height: 915px;
+    overflow-x: hidden ;
   }
 
-  .backtemplate img {
-    width: 1440px;
-    z-index: 0;
-  }
 
   .semicircle {
     bottom: 0;
@@ -1962,6 +1965,7 @@ a {
     width: 155px;
     right: -27.3%;
     top: 11.6%;
+    display: none;
   }
 
   .square3 {
@@ -2073,7 +2077,7 @@ a {
   }
 
   .top {
-    width: 100%;
+    width: 80%;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -2318,6 +2322,7 @@ a {
     flex-direction: column;
     width: 49%;
     margin-left: 4%;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -2333,7 +2338,7 @@ a {
   .canopy {
     display: flex;
     top: 0;
-    min-width: 400px;
+    min-width: 370px;
   }
 
   .canopy p {
@@ -2393,7 +2398,7 @@ a {
   .facebook {
     display: flex;
     top: 0;
-    min-width: 430px;
+    min-width: 370px;
   }
 
   .facebook p {
@@ -2434,7 +2439,7 @@ a {
   .uber {
     display: flex;
     top: 0;
-    min-width: 400px;
+    min-width: 370px;
   }
 
   .uber p {
