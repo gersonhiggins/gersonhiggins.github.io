@@ -10,9 +10,11 @@ body {
 a {
   text-decoration: none;
 }
+
 .introbox {
   overflow: hidden;
 }
+
 header {
   background-color: white;
   box-sizing: border-box;
@@ -27,38 +29,41 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-
 }
+
 .nav-menu {
   display: flex;
   justify-self: end;
   align-items: center;
   gap: 20px;
- 
 }
 
 .nav-brand {
   font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #6070FF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
 }
+
 .nav-link {
   color: #344563;
   transition: 0.7s ease;
- }
- .nav-link:hover {
-  color: #6070FF;
- }
- .hamburguer {
+}
+
+.nav-link:hover {
+  color: #6070ff;
+}
+
+.hamburguer {
   display: none;
   cursor: pointer;
- }
- .bar {
+}
+
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -66,7 +71,7 @@ color: #6070FF;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #344563;
- }
+}
 
 @media only screen and (min-width: 1200px) {
   .introbox {
@@ -1917,15 +1922,19 @@ color: #6070FF;
   .hamburguer {
     display: block;
   }
-  .hamburguer.active .bar:nth-child(2){
+
+  .hamburguer.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburguer.active .bar:nth-child(1){
-   transform: translateY(8px) rotate(45deg);
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
-  .hamburguer.active .bar:nth-child(3){
-   transform: translateY(-8px) rotate(-45deg);
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -1938,16 +1947,20 @@ color: #6070FF;
     transition: 0.3s;
     z-index: 3;
   }
-  .nav-item{
-    margin: 16px 0px;
+
+  .nav-item {
+    margin: 16px 0;
   }
+
   .nav-menu.active {
     left: 0;
   }
+
   body {
     min-width: 375;
     overflow-x: hidden;
   }
+
   .welcome {
     display: flex;
   }
@@ -1969,9 +1982,8 @@ color: #6070FF;
     left: 0;
     z-index: 1;
     height: 915px;
-    overflow-x: hidden ;
+    overflow-x: hidden;
   }
-
 
   .semicircle {
     bottom: 0;
