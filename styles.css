@@ -1923,13 +1923,12 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-
   body {
     min-width: 375;
     overflow-x: hidden;
   }
 
- .hamburguer {
+  .hamburguer {
     display: block;
     z-index: 4;
   }
@@ -1980,6 +1979,7 @@ header {
   .nav-menu.active {
     left: 0;
   }
+
   .welcome {
     display: flex;
   }
@@ -2001,9 +2001,8 @@ header {
     left: 0;
     z-index: 1;
     height: 915px;
-    overflow-x: hidden ;
+    overflow-x: hidden;
   }
-
 
   .semicircle {
     bottom: 0;
@@ -2955,4 +2954,3 @@ header {
     background-color: #0d151e;
   }
 }
-
