@@ -105,7 +105,6 @@ header {
   display: flex;
   justify-content: space-between;
   width: 95%;
-  
 }
 
 .button-splash {
@@ -113,17 +112,16 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
+
 .list500 {
   width: 250px;
-
 }
 
 .raya500 {
   width: 80%;
   height: 1px;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
 }
 
 .a500 {
@@ -175,7 +173,7 @@ header {
   width: 25px;
   height: 3px;
   margin: 8px;
-  background-color:  #67798E;
+  background-color: #67798e;
 }
 
 .bar2:nth-child(1) {
