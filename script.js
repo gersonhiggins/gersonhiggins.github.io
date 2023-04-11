@@ -25,8 +25,24 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   contact.classList.remove('blur');
   brand.classList.remove('blur');
 }));
-function showPopUp(id) {      
-  const popup = document.querySelector(".pop-"+id);
-    popup.classList.toggle('splash');
-  section.classList.toggle("blur");
+
+function showPopUp(id) {
+  const popup = document.querySelector(`.pop-${id}`);
+  const exit = document.querySelector('.exit');
+  popup.classList.toggle('splash');
+  intro.classList.toggle('blur');
+  grid.classList.toggle('blur');
+  about.classList.toggle('blur');
+  contact.classList.toggle('blur');
+  brand.classList.toggle('blur');
+  exit.addEventListener('click', () => {
+    popup.classList.remove('splash');
+    intro.classList.remove('blur');
+    grid.classList.remove('blur');
+    about.classList.remove('blur');
+    contact.classList.remove('blur');
+    brand.classList.remove('blur');
+  });
 }
+
+showPopUp(2);
