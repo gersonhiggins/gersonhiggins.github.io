@@ -25,3 +25,8 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   contact.classList.remove('blur');
   brand.classList.remove('blur');
 }));
+function showPopUp(id) {      
+  const popup = document.querySelector(".pop-"+id);
+    popup.classList.toggle('splash');
+  section.classList.toggle("blur");
+}
