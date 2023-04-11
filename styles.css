@@ -6,9 +6,11 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
 .background {
   overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
 }
@@ -84,31 +86,36 @@ header {
   height: 100%;
   width: 100%;
 }
+
 .popup .box2 h1 {
   padding: 0;
   margin: 0;
 }
+
 .popup .box2 img {
   max-width: 95%;
 }
+
 .popup .box1 {
   display: flex;
   justify-content: space-between;
   width: 95%;
-
 }
+
 .button-splash {
   width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .raya500 {
   width: 80%;
   height: 1px;
   background-color: #505f79;
 }
-.a500{
+
+.a500 {
   width: 100%;
   display: flex;
   gap: 8px;
@@ -124,13 +131,15 @@ header {
   margin-right: 0;
   background-color: inherit;
   border: 1px solid #396df2;
-  color: #6070FF;
+  color: #6070ff;
   transition: 0.5s;
 }
+
 .boton500:hover {
-  background-color: #6070FF;
+  background-color: #6070ff;
   color: white;
 }
+
 .textSpace {
   width: 65%;
   display: flex;
@@ -138,31 +147,32 @@ header {
   justify-content: space-around;
   height: 250px;
 }
+
 .textSpace h2 {
   width: 100%;
   height: 50%;
 }
+
 .exit {
   position: absolute;
   right: 10px;
   top: 10px;
 }
+
 .bar2 {
   display: block;
   width: 25px;
   height: 3px;
   margin: 8px;
   background-color: black;
-
 }
 
 .bar2:nth-child(1) {
   transform: translateY(4px) rotate(45deg);
-  
 }
+
 .bar2:nth-child(2) {
   transform: translateY(-8px) rotate(-45deg);
-  
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1082,11 +1092,23 @@ header {
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
+  h2 {
+    width: 496px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #344563;
+    margin: 0;
+  }
+
   .textSpace h2 {
     width: 100%;
     height: 50%;
     font-size: 15px;
   }
+
   .introbox {
     width: 100%;
     height: 916px;
@@ -1606,17 +1628,6 @@ header {
     color: #6b778c;
   }
 
-  h2 {
-    width: 496px;
-    height: 50px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #344563;
-    margin: 0;
-  }
-
   .buttons {
     margin-top: 28px;
   }
@@ -2016,18 +2027,27 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  .popup .box1{
-    display: block;
-   
+  .box1 {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
   }
+
+  .popup .box1 {
+    display: block;
+  }
+
   .textSpace {
     height: 400px;
     margin-bottom: 20px;
   }
+
   body {
     min-width: 375;
     overflow-x: hidden;
   }
+
   .button-splash {
     height: 120px;
     display: flex;
@@ -2526,13 +2546,6 @@ header {
 
   #inverse {
     flex-direction: column-reverse;
-  }
-
-  .box1 {
-    width: 92%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 4%;
   }
 
   .image1 {
@@ -3061,17 +3074,18 @@ header {
   }
 }
 
-.popup{
+.popup {
   width: 80%;
   height: 90%;
   left: 10%;
-  display: none ;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll  ;
+  overflow-y: scroll;
 }
-.splash{
+
+.splash {
   display: flex;
   position: fixed;
   top: 70px;

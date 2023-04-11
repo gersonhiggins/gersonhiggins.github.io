@@ -26,8 +26,8 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   brand.classList.remove('blur');
 }));
 
-function showPopUp(id) {      
-  const popup = document.querySelector('.pop-'+id);
+function showPopUp(id) {
+  const popup = document.querySelector(`.pop-${id}`);
   const exit = document.querySelector('.exit');
   popup.classList.toggle('splash');
   intro.classList.toggle('blur');
@@ -42,6 +42,7 @@ function showPopUp(id) {
     about.classList.remove('blur');
     contact.classList.remove('blur');
     brand.classList.remove('blur');
-
   });
 }
+
+showPopUp(2);
