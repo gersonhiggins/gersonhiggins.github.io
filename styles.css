@@ -10,7 +10,10 @@ body {
 a {
   text-decoration: none;
 }
-
+.error{
+  background-color: white;
+  color: red;
+}
 .splash{
   display: flex;
   position: fixed;
