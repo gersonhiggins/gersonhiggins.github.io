@@ -44,5 +44,15 @@ function showPopUp(id) {
     brand.classList.remove('blur');
   });
 }
-
 showPopUp(2);
+function fix() {
+  const mail = document.forms['contact-form'].email.value;
+  const error = document.getElementById('mail-error');
+  if (mail.toLowerCase() !== mail) {
+    error.hidden = false;
+    return false;
+  }
+
+  return true;
+}
+fix();

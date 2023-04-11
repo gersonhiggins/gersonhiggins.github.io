@@ -14,17 +14,12 @@ body {
 a {
   text-decoration: none;
 }
-.error{
+
+.error {
   background-color: white;
   color: red;
 }
-.splash{
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
+
 .blur {
   filter: blur(8px);
 }
