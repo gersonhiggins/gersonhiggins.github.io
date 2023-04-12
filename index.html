@@ -10,6 +10,21 @@
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-brand">My Logo</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     <div class="introbox">
       <div class="background">
         <div class="first">
@@ -36,23 +51,6 @@
         <div class="donut4"></div>
         <div class="donut5"></div>
       </div>
-
-      <div class="welcome">
-        <div class="top">
-          <div class="header">
-            <p class="logo">My Logo</p>
-          </div>
-          <div class="menuhover">
-            <ul>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button aria-label="burguer">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-        </div>
         <div class="intro">
           <p class="text">Im Gerson Higgins. Glad to see you!</p>
           <p class="text2">
@@ -97,7 +95,7 @@
             </ul>
           </div>
           <div class="project">
-            <button><a href="#">See project</a></button>
+            <button><a class="popupbutton">See project</a></button>
           </div>
         </div>
       </div>
@@ -124,7 +122,7 @@
             </ul>
           </div>
           <div class="project">
-            <button><a href="#">See project</a></button>
+            <button><a class="popupbutton">See project</a></button>
           </div>
         </div>
         <div class="box1">
@@ -156,7 +154,7 @@
             </ul>
           </div>
           <div class="project">
-            <button><a href="#">See project</a></button>
+            <button><a class="popupbutton">See project</a></button>
           </div>
         </div>
       </div>
@@ -182,7 +180,7 @@
             </ul>
           </div>
           <div class="project">
-            <button><a href="#">See project</a></button>
+            <button><a class="popupbutton">See project</a></button>
           </div>
         </div>
         <div class="box1">
@@ -260,7 +258,7 @@
           </p>
         </div>
 
-      <form action="https://formspree.io/f/mzbqjbkb" method="post">
+      <form name="contact-form" action="https://formspree.io/f/mzbqjbkb" method="post" onsubmit="return fix()">
 
         <ul>
             <li>
@@ -275,9 +273,8 @@
             </li>
             <li>
                 <textarea name="" required placeholder="  Write your message here...." maxlength="500"></textarea>
-            </li>
-
-
+            </li>                
+                <span id="mail-error" class="error" hidden> * The email must be lowercase!</span>
           </ul>
 
           <button class="getin">Get in touch</button>
@@ -285,6 +282,12 @@
         </form>
 
         <div class="line"></div>
+      </div>
+    </section>
+    <section id="popup-section">
+      <div class="exit">
+        <span class="bar2"></span>
+        <span class="bar2"></span>
       </div>
     </section>
     <script src="./script.js"></script>

@@ -1,4 +1,4 @@
-Copyright 2021, Gerson Higgins
+Copyright 2023, Gerson Higgins
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this Website and associated documentation files,
 to deal in the Website without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
