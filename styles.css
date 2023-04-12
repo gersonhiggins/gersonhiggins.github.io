@@ -142,6 +142,7 @@ header {
   border: 1px solid #396df2;
   color: #6070ff;
   transition: 0.5s;
+  font-size: 13px;
 }
 
 .boton500:hover {
@@ -163,9 +164,14 @@ header {
 }
 
 .exit {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+  position: fixed;
+  right: 1200%;
+  top: 12%;
+  z-index: 4;
+}
+
+.exit.active {
+  right: 12%;
 }
 
 .bar2 {
@@ -2730,6 +2736,10 @@ header {
     font-size: 15px;
     line-height: 24px;
     color: #344563;
+  }
+
+  .textSpace h2 {
+    font-size: 12px;
   }
 
   .buttons {
