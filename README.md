@@ -38,7 +38,9 @@ HTML AND CSS
 
 ### Key Features <a name="key-features"></a>
 
- Curriculum
+ Responsive Web Design 
+ DropDown Menu 
+ PopUp Works Windows
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,7 +61,9 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-Any explorer (google chrome, morzilla, internet explorer)
+Visual Studio Code, Or another coding program.
+Git App
+Use this code to copy the project: git@github.com:gersonhiggins/gersonhiggins.github.io.git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,6 +74,7 @@ Any explorer (google chrome, morzilla, internet explorer)
 👤 Gerson Higgins
 
 - GitHub: [@gitgersonhiggins](https://github.com/gersonhiggins)
+- GitHun: [@gitwillococa](https://github.com/willococa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
