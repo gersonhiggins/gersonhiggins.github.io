@@ -11,7 +11,6 @@ const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const textArea = document.getElementById('text-area');
 const getinButton = document.querySelector('.getin');
-const mail = document.forms['contact-form'].email.value;
 const error = document.getElementById('mail-error');
 
 hamburguer.addEventListener('click', () => {
@@ -204,25 +203,24 @@ exit.addEventListener('click', () => {
   contact.classList.remove('blur');
   brand.classList.remove('blur');
 });
+let bool;
 
 getinButton.addEventListener('click', () => {
-  let bool = true;
-  if (mail.toLowerCase() !== mail) {
+  bool = false;
+  const mail = emailInput.value;
+  if (mail.toLowerCase() !== mail && bool === false) {
     error.hidden = false;
-    bool = false;
-  } else {
+  } else if(mail.toLowerCase() === mail){
     localStorage.setItem('form', JSON.stringify({
       name: nameInput.value,
       email: emailInput.value,
       textarea: textArea.value,
-    }))
+    }));
+    bool = true;
   }
 });
 
-const oldform = JSON.parse(localStorage.getItem('form'))
-nameInput.value = oldform.name
-emailInput.value = oldform.email
-textArea.value = oldform.textarea
-
-
-
+const oldform = JSON.parse(localStorage.getItem('form'));
+nameInput.value = oldform.name;
+emailInput.value = oldform.email;
+textArea.value = oldform.textarea;
