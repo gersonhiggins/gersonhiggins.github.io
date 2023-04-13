@@ -212,11 +212,10 @@ getinButton.addEventListener('click', () => {
   if (mail.toLowerCase() !== mail && bool === false) {
     error.hidden = false;
   } else if (mail.toLowerCase() === mail) {
-
     bool = true;
   }
 });
-form.addEventListener("change", () =>{
+form.addEventListener('change', () => {
   localStorage.setItem('form', JSON.stringify({
     name: nameInput.value,
     email: emailInput.value,
