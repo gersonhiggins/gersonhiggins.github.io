@@ -13,16 +13,7 @@ const textArea = document.getElementById('text-area');
 const getinButton = document.querySelector('.getin');
 const mail = document.forms['contact-form'].email.value;
 const error = document.getElementById('mail-error');
-let form = {
-  name: nameInput.value,
-  email: emailInput.value,
-  textarea: textArea.value,
-  setValues: function(_form){
-    nameInput.value = _form.name 
-    emailInput.value = _form.email
-    textArea.value = _form.textarea
-  }
-}
+
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -220,12 +211,18 @@ getinButton.addEventListener('click', () => {
     error.hidden = false;
     bool = false;
   } else {
-    localStorage.setItem('form', JSON.stringify(form))
+    localStorage.setItem('form', JSON.stringify({
+      name: nameInput.value,
+      email: emailInput.value,
+      textarea: textArea.value,
+    }))
   }
 });
 
 const oldform = JSON.parse(localStorage.getItem('form'))
-form.setValues(oldform)
+nameInput.value = oldform.name
+emailInput.value = oldform.email
+textArea.value = oldform.textarea
 
 
 
