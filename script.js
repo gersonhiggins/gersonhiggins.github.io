@@ -12,6 +12,7 @@ const emailInput = document.getElementById('email');
 const textArea = document.getElementById('text-area');
 const getinButton = document.querySelector('.getin');
 const error = document.getElementById('mail-error');
+const form = document.getElementById('form');
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
@@ -211,15 +212,17 @@ getinButton.addEventListener('click', () => {
   if (mail.toLowerCase() !== mail && bool === false) {
     error.hidden = false;
   } else if (mail.toLowerCase() === mail) {
-    localStorage.setItem('form', JSON.stringify({
-      name: nameInput.value,
-      email: emailInput.value,
-      textarea: textArea.value,
-    }));
+
     bool = true;
   }
 });
-
+form.addEventListener("change", () =>{
+  localStorage.setItem('form', JSON.stringify({
+    name: nameInput.value,
+    email: emailInput.value,
+    textarea: textArea.value,
+  }));
+});
 const oldform = JSON.parse(localStorage.getItem('form'));
 nameInput.value = oldform.name;
 emailInput.value = oldform.email;
