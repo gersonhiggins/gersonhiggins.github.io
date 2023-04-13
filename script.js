@@ -210,7 +210,7 @@ getinButton.addEventListener('click', () => {
   const mail = emailInput.value;
   if (mail.toLowerCase() !== mail && bool === false) {
     error.hidden = false;
-  } else if(mail.toLowerCase() === mail){
+  } else if (mail.toLowerCase() === mail) {
     localStorage.setItem('form', JSON.stringify({
       name: nameInput.value,
       email: emailInput.value,
