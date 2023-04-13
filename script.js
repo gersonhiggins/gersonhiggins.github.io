@@ -7,6 +7,12 @@ const contact = document.querySelector('.contact_form');
 const brand = document.querySelector('.nav-brand');
 const popupSection = document.getElementById('popup-section');
 const exit = document.querySelector('.exit');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const textArea = document.getElementById('text-area');
+const getinButton = document.querySelector('.getin');
+const mail = document.forms['contact-form'].email.value;
+const error = document.getElementById('mail-error');
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
@@ -199,14 +205,14 @@ exit.addEventListener('click', () => {
   brand.classList.remove('blur');
 });
 
-function fix() {
-  const mail = document.forms['contact-form'].email.value;
-  const error = document.getElementById('mail-error');
+getinButton.addEventListener('click', () => {
+  let bool = true;
   if (mail.toLowerCase() !== mail) {
     error.hidden = false;
-    return false;
-  }
+    bool = false;
+  } else {
 
-  return true;
-}
-fix();
+  }
+});
+
+
