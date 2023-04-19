@@ -258,7 +258,7 @@
           </p>
         </div>
 
-      <form name="contact-form" action="https://formspree.io/f/mzbqjbkb" method="post" onsubmit="return fix()">
+      <form id="form"name="contact-form" action="https://formspree.io/f/mzbqjbkb" method="post" onsubmit="return bool">
 
         <ul>
             <li>
@@ -272,7 +272,7 @@
                 </label>
             </li>
             <li>
-                <textarea name="" required placeholder="  Write your message here...." maxlength="500"></textarea>
+                <textarea name="" id="text-area" required placeholder="  Write your message here...." maxlength="500"></textarea>
             </li>                
                 <span id="mail-error" class="error" hidden> * The email must be lowercase!</span>
           </ul>

@@ -7,6 +7,12 @@ const contact = document.querySelector('.contact_form');
 const brand = document.querySelector('.nav-brand');
 const popupSection = document.getElementById('popup-section');
 const exit = document.querySelector('.exit');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const textArea = document.getElementById('text-area');
+const getinButton = document.querySelector('.getin');
+const error = document.getElementById('mail-error');
+const form = document.getElementById('form');
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
@@ -198,15 +204,25 @@ exit.addEventListener('click', () => {
   contact.classList.remove('blur');
   brand.classList.remove('blur');
 });
+let bool;
 
-function fix() {
-  const mail = document.forms['contact-form'].email.value;
-  const error = document.getElementById('mail-error');
-  if (mail.toLowerCase() !== mail) {
+getinButton.addEventListener('click', () => {
+  bool = false;
+  const mail = emailInput.value;
+  if (mail.toLowerCase() !== mail && bool === false) {
     error.hidden = false;
-    return false;
+  } else if (mail.toLowerCase() === mail) {
+    bool = true;
   }
-
-  return true;
-}
-fix();
+});
+form.addEventListener('change', () => {
+  localStorage.setItem('form', JSON.stringify({
+    name: nameInput.value,
+    email: emailInput.value,
+    textarea: textArea.value,
+  }));
+});
+const oldform = JSON.parse(localStorage.getItem('form'));
+nameInput.value = oldform.name;
+emailInput.value = oldform.email;
+textArea.value = oldform.textarea;
