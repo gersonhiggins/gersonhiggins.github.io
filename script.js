@@ -13,7 +13,8 @@ const textArea = document.getElementById('text-area');
 const getinButton = document.querySelector('.getin');
 const error = document.getElementById('mail-error');
 const form = document.getElementById('form');
-
+const images = ['./images/capstone.png', './images/awesome.png'];
+const links = ['https://gersonhiggins.github.io/', 'https://gersonhiggins.github.io/awesome-books/'];
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -34,7 +35,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   brand.classList.remove('blur');
 }));
 
-document.querySelectorAll('.popupbutton').forEach((n) => n.addEventListener('click', () => {
+document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListener('click', () => {
   const node1 = document.createElement('DIV');
   node1.setAttribute('class', 'grid g2 popup pop-1');
   popupSection.appendChild(node1);
@@ -76,7 +77,7 @@ document.querySelectorAll('.popupbutton').forEach((n) => n.addEventListener('cli
 
   const node15 = document.createElement('IMG');
   node15.setAttribute('class', 'image1');
-  node15.setAttribute('src', './images/Snapshoot-Portfolio.png');
+  node15.setAttribute('src', `${images[index]}`);
   node15.setAttribute('alt', 'Tonic');
   node5.appendChild(node15);
 
@@ -166,6 +167,7 @@ document.querySelectorAll('.popupbutton').forEach((n) => n.addEventListener('cli
   node40.appendChild(node41);
 
   const node42 = document.createElement('A');
+  node42.setAttribute('href', `${links[index]}`);
   node41.appendChild(node42);
   const node3 = document.createTextNode('See Live ');
   node42.appendChild(node3);
