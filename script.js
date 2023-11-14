@@ -13,8 +13,14 @@ const textArea = document.getElementById('text-area');
 const getinButton = document.querySelector('.getin');
 const error = document.getElementById('mail-error');
 const form = document.getElementById('form');
-const images = ['./images/capstone.png', './images/awesome.png'];
-const links = ['https://gersonhiggins.github.io/', 'https://gersonhiggins.github.io/awesome-books/'];
+const images = ['./images/capstone.png', './images/awesome.png', './images/bdget.png', './images/houserental.png'];
+const links = ['https://gersonhiggins.github.io/', 'https://gersonhiggins.github.io/awesome-books/', 'https://budgetapp-gh.onrender.com/', 'https://houses-booking-8105175e8e55.herokuapp.com/  '];
+const linksgit = ['https://github.com/gersonhiggins/gersonhiggins.github.io', 'https://github.com/gersonhiggins/awsomebooks', 'https://github.com/gersonhiggins/budget-app', 'https://github.com/ahmedeid6842/book_an_appointment_frontend'];
+const descriptions = ['Overall, the website serves as a virtual marketplace for food enthusiasts, connecting them with a diverse range of culinary experiences and fostering a community around food appreciation, exploration, and enjoyment.',
+  'In addition to physical books, many libraries now offer digital resources such as e-books, audiobooks, and online databases. These digital collections can be accessed remotely, enabling users to borrow and read books on their electronic devices without physically visiting the library.',
+  'Overall, the Budget App aims to simplify expense tracking, budget management, and financial decision-making for users. It leverages Ruby on Rails for the backend functionality and CSS for styling, providing an efficient and visually appealing user experience.',
+  'Overall, the House Rental app aims to simplify the process of finding and renting a home by providing users with a wide selection of houses tailored to their preferences. It leverages Ruby on Rails for the backend functionality, React and Redux for the frontend interactivity, and CSS for visual styling, resulting in a seamless and visually appealing user experience.'];
+
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -92,14 +98,8 @@ document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListen
   const node18 = document.createElement('H2');
   node17.appendChild(node18);
 
-  const node19 = document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus, porro repellendus autem ducimus aut quos vero officia ut, eligendi consequuntur quam? Aut quae animi maxime modi! Perspiciatis, dolorum laboriosam.');
+  const node19 = document.createTextNode(`${descriptions[index]}`);
   node18.appendChild(node19);
-
-  const node20 = document.createElement('H2');
-  node17.appendChild(node20);
-
-  const node21 = document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus, porro repellendus autem ducimus aut quos vero officia ut, eligendi consequuntur quam? Aut quae animi maxime modi! Perspiciatis, dolorum laboriosam.');
-  node20.appendChild(node21);
 
   const node22 = document.createElement('DIV');
   node22.setAttribute('class', 'buttons button-splash');
@@ -180,6 +180,7 @@ document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListen
   node40.appendChild(node44);
 
   const node45 = document.createElement('A');
+  node45.setAttribute('href', `${linksgit[index]}`);
   node44.appendChild(node45);
   const node2 = document.createTextNode('See Source ');
   node45.appendChild(node2);
