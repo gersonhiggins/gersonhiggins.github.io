@@ -46,7 +46,7 @@ HTML AND CSS
 
 ## Live Demo
 
-https://gersonhiggins.github.io/
+[live demo](https://gersonhiggins.github.io/gersonhiggins-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
