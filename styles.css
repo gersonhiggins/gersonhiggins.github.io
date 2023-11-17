@@ -260,6 +260,10 @@ header {
   gap: 20px;
 } 
 
+.intro p {
+  width: 100%;  
+}
+
 @media only screen and (min-width: 1400px){
   .popup {
     padding-top: 80px;
