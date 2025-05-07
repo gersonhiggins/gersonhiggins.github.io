@@ -13,8 +13,39 @@ const textArea = document.getElementById('text-area');
 const getinButton = document.querySelector('.getin');
 const error = document.getElementById('mail-error');
 const form = document.getElementById('form');
-const images = ['./images/capstone.png', './images/awesome.png'];
-const links = ['https://gersonhiggins.github.io/', 'https://gersonhiggins.github.io/awesome-books/'];
+const images = ['./images/capstone.png', './images/math-magic.png', './images/bdget.png', './images/houserental.png'];
+const links = ['https://gersonhiggins.github.io/', 'https://gersonhiggins.github.io/awesome-books/', 'https://budgetapp-gh.onrender.com/', 'https://houses-booking-8105175e8e55.herokuapp.com/  '];
+const linksgit = ['https://github.com/gersonhiggins/gersonhiggins.github.io', 'https://github.com/gersonhiggins/awsomebooks', 'https://github.com/gersonhiggins/budget-app', 'https://github.com/ahmedeid6842/book_an_appointment_frontend'];
+const descriptions = ['Overall, the website serves as a virtual marketplace for food enthusiasts, connecting them with a diverse range of culinary experiences and fostering a community around food appreciation, exploration, and enjoyment.',
+  'Calculators can be used for a wide range of applications, from simple calculations in everyday life to complex calculations in fields such as engineering, finance, and science. They provide a convenient and efficient way to perform mathematical operations quickly and accurately.',
+  'Overall, the Budget App aims to simplify expense tracking, budget management, and financial decision-making for users. It leverages Ruby on Rails for the backend functionality and CSS for styling, providing an efficient and visually appealing user experience.',
+  'Overall, the House Rental app aims to simplify the process of finding and renting a home by providing users with a wide selection of houses tailored to their preferences. It leverages Ruby on Rails for the backend functionality, React and Redux for the frontend interactivity, and CSS for visual styling, resulting in a seamless and visually appealing user experience.'];
+const section = document.querySelectorAll('.g2');
+
+window.onscroll = () => {
+  section.forEach(sec => {
+    if(screen.width > 1400) {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 800;
+      let height = sec.offsetHeight;
+
+      if(top >= offset && top < offset + height) {
+        sec.classList.add('show-animate')
+      }
+    }
+
+    if(screen.width > 1200 && screen.width < 1400) {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 1300;
+      let height = sec.offsetHeight;
+
+      if(top >= offset && top < offset + height) {
+        sec.classList.add('show-animate')
+      }
+    }
+  })
+}
+
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -37,42 +68,42 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListener('click', () => {
   const node1 = document.createElement('DIV');
-  node1.setAttribute('class', 'grid g2 popup pop-1');
+  node1.setAttribute('class', 'popup pop-1');
   popupSection.appendChild(node1);
 
   const node5 = document.createElement('DIV');
-  node5.setAttribute('class', 'box2');
+  node5.setAttribute('class', 'boxpop');
   node1.appendChild(node5);
 
   const node6 = document.createElement('H1');
   node5.appendChild(node6);
 
-  const node7 = document.createTextNode('Tonic');
+  const node7 = document.createTextNode('Project');
   node6.appendChild(node7);
 
   const node8 = document.createElement('DIV');
-  node8.setAttribute('class', 'canopy');
+  node8.setAttribute('class', 'canopypop');
   node5.appendChild(node8);
 
   const node9 = document.createElement('P');
   node9.setAttribute('class', 'p1');
   node8.appendChild(node9);
 
-  const node10 = document.createTextNode('CANOPY');
+  const node10 = document.createTextNode('WEBSITE');
   node9.appendChild(node10);
 
   const node11 = document.createElement('P');
   node11.setAttribute('class', 'p2');
   node8.appendChild(node11);
 
-  const node12 = document.createTextNode('Back End Dev');
+  const node12 = document.createTextNode('FullStack Dev');
   node11.appendChild(node12);
 
   const node13 = document.createElement('P');
   node13.setAttribute('class', 'p3');
   node8.appendChild(node13);
 
-  const node14 = document.createTextNode('2015');
+  const node14 = document.createTextNode('2023');
   node13.appendChild(node14);
 
   const node15 = document.createElement('IMG');
@@ -82,7 +113,7 @@ document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListen
   node5.appendChild(node15);
 
   const node16 = document.createElement('DIV');
-  node16.setAttribute('class', 'box1');
+  node16.setAttribute('class', 'boxpop1');
   node5.appendChild(node16);
 
   const node17 = document.createElement('DIV');
@@ -92,14 +123,8 @@ document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListen
   const node18 = document.createElement('H2');
   node17.appendChild(node18);
 
-  const node19 = document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus, porro repellendus autem ducimus aut quos vero officia ut, eligendi consequuntur quam? Aut quae animi maxime modi! Perspiciatis, dolorum laboriosam.');
+  const node19 = document.createTextNode(`${descriptions[index]}`);
   node18.appendChild(node19);
-
-  const node20 = document.createElement('H2');
-  node17.appendChild(node20);
-
-  const node21 = document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus, porro repellendus autem ducimus aut quos vero officia ut, eligendi consequuntur quam? Aut quae animi maxime modi! Perspiciatis, dolorum laboriosam.');
-  node20.appendChild(node21);
 
   const node22 = document.createElement('DIV');
   node22.setAttribute('class', 'buttons button-splash');
@@ -168,6 +193,7 @@ document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListen
 
   const node42 = document.createElement('A');
   node42.setAttribute('href', `${links[index]}`);
+  node42.setAttribute('target', '_blank');
   node41.appendChild(node42);
   const node3 = document.createTextNode('See Live ');
   node42.appendChild(node3);
@@ -180,6 +206,8 @@ document.querySelectorAll('.popupbutton').forEach((n, index) => n.addEventListen
   node40.appendChild(node44);
 
   const node45 = document.createElement('A');
+  node45.setAttribute('href', `${linksgit[index]}`);
+  node45.setAttribute('target', '_blank');
   node44.appendChild(node45);
   const node2 = document.createTextNode('See Source ');
   node45.appendChild(node2);

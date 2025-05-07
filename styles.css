@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Poppins, sans-serif;
@@ -13,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: rgb(53, 53, 53);
 }
 
 .error {
@@ -86,8 +90,12 @@ header {
   background-color: #6070ff;
 }
 
+.icon {
+  position: relative;
+  z-index: 10;
+}
+
 .popup .box2 {
-  top: 10px;
   height: 100%;
   width: 100%;
 }
@@ -151,11 +159,7 @@ header {
 }
 
 .textSpace {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 250px;
+  margin-top: 10px;
 }
 
 .textSpace h2 {
@@ -166,12 +170,12 @@ header {
 .exit {
   position: fixed;
   right: 1200%;
-  top: 12%;
+  top: 10%;
   z-index: 4;
 }
 
 .exit.active {
-  right: 12%;
+  right: 15%;
 }
 
 .bar2 {
@@ -188,6 +192,80 @@ header {
 
 .bar2:nth-child(2) {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+.dropmenu1 ul {
+  display: none
+}
+
+.languajes:hover .dropmenu1 ul {
+  background-color: #fff;
+  display: flex;
+}
+
+.frames:hover .dropmenu1 ul {
+  background-color: #fff;
+  display: flex;
+}
+
+.boxpop {
+  height: fit-content;
+  background-color: white;
+  width: 100%;
+  padding: 50px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxpop1 {
+  max-width: 900px;
+  display: flex;
+  gap: 30px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
+.popup {
+  margin: 0;
+  width: 80%;
+  height: 90%;
+  left: 10%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash {
+  display: flex;
+  position: fixed;
+  top: 70px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.boxpop .image1 {
+  max-width: 900px;
+}
+
+.boxpop h1{
+  padding-inline-start: 20px;
+}
+
+.canopypop {
+  display: flex;
+  gap: 20px;
+} 
+
+@media only screen and (min-width: 1400px){
+  .popup {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 88%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -529,6 +607,10 @@ header {
     color: #505f79;
   }
 
+  .icon1 {
+    cursor: pointer;
+  }
+
   .boton {
     font-family: Poppins, sans-serif;
     border-bottom: #6b778c;
@@ -563,7 +645,6 @@ header {
   }
 
   .box2 {
-    width: 49%;
     margin: 1% 1% 1% 40px;
   }
 
@@ -767,10 +848,6 @@ header {
     text-align: left;
   }
 
-  .buttons button:hover {
-    color: #091e42;
-    background-color: #3743b3;
-  }
 
   .project button:hover {
     background-color: #3743b3;
@@ -789,7 +866,7 @@ header {
     background-color: #fff;
     height: 500px;
     border-top-right-radius: 100px;
-    padding-bottom: 350px;
+    padding-bottom: 200px;
   }
 
   .about1 {
@@ -870,7 +947,6 @@ header {
   }
 
   .dropmenu1 ul {
-    display: flex;
     margin-top: 36px;
   }
 
@@ -887,10 +963,6 @@ header {
     line-height: 28px;
     text-align: center;
     color: #ebebff;
-  }
-
-  .languajes:hover .dropmenu1 ul {
-    background-color: #fff;
   }
 
   .am {
@@ -1103,6 +1175,42 @@ header {
     width: 30%;
     height: 5px;
     background-color: #0d151e;
+  }
+
+  .g2:nth-child(odd) {
+    position: relative;
+    right: 1500px;
+  }
+  
+  .g2:nth-child(even) {
+    position: relative;
+    left: 1500px;
+  }
+  
+  .show-animate:nth-child(odd) {
+    animation: goRight 1s 1 forwards;
+  }
+  
+  .show-animate:nth-child(even) {
+    animation: goLeft 1s 1 forwards;
+  }
+  
+  @keyframes goRight {
+    60% {
+      transform: translateX(0);
+    }
+    100% {
+      right: 0;
+    }
+  }
+  
+  @keyframes goLeft {
+    60% {
+      transform: translateX(0);
+    }
+    100% {
+      left: 0;
+    }
   }
 }
 
@@ -1495,7 +1603,6 @@ header {
   }
 
   .box2 {
-    width: 49%;
     margin: 1% 1% 1% 40px;
   }
 
@@ -1684,11 +1791,6 @@ header {
     text-align: left;
   }
 
-  .buttons button:hover {
-    color: #091e42;
-    background-color: #3743b3;
-  }
-
   .project button:hover {
     background-color: #3743b3;
   }
@@ -1707,7 +1809,7 @@ header {
     background-color: #fff;
     height: 500px;
     border-top-right-radius: 100px;
-    padding-bottom: 700px;
+    padding-bottom: 430px;
   }
 
   .about1 {
@@ -2042,6 +2144,11 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    min-width: 375;
+    overflow-x: hidden;
+  }
+
   .box1 {
     width: 92%;
     margin-left: 4%;
@@ -2052,17 +2159,27 @@ header {
   .popup .box1 {
     display: block;
   }
+  
+  .splash{
+    overflow-x: visible;
+    overflow-y: scroll;
+    width: 90%;
+    left: 5%;
+  }
+
+  .boxpop {
+    position: relative;
+    overflow-x: hidden;
+    justify-content: flex-start;
+  }
 
   .textSpace {
-    height: 400px;
     margin-bottom: 20px;
   }
 
-  body {
-    min-width: 375;
-    overflow-x: hidden;
+  .exit {
+    top: 14%;
   }
-
   .button-splash {
     height: 120px;
     display: flex;
@@ -2571,7 +2688,6 @@ header {
   .box2 {
     display: flex;
     flex-direction: column;
-    width: 49%;
     margin-left: 4%;
     overflow-x: hidden;
   }
@@ -2749,11 +2865,6 @@ header {
     margin-bottom: 12%;
   }
 
-  .buttons button:hover {
-    color: #091e42;
-    background-color: #3743b3;
-  }
-
   .project button:hover {
     background-color: #3743b3;
   }
@@ -2868,6 +2979,16 @@ header {
     padding: 12px;
     margin-right: 12px;
     left: 2%;
+  }
+
+  .languajes:hover .dropmenu1 ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frames:hover .dropmenu1 ul{
+    display: flex;
+    flex-direction: column;
   }
 
   .languajes:hover .dropmenu1 {
@@ -3091,22 +3212,9 @@ header {
     height: 5px;
     background-color: #0d151e;
   }
-}
 
-.popup {
-  width: 80%;
-  height: 90%;
-  left: 10%;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow-y: scroll;
-}
-
-.splash {
-  display: flex;
-  position: fixed;
-  top: 70px;
-  z-index: 3;
+  .boxpop1 {
+    flex-direction: column;
+    gap: 0;
+  }
 }
