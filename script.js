@@ -15,7 +15,7 @@ const error = document.getElementById('mail-error');
 const form = document.getElementById('form');
 const images = ['./images/capstone.png', './images/math-magic.png', './images/bdget.png', './images/houserental.png'];
 const links = ['https://gersonhiggins.github.io/food-events', 'https://gersonhiggins.github.io/math-magicians/', 'https://budgetapp-gh.onrender.com/', 'https://houses-booking-8105175e8e55.herokuapp.com/  '];
-const linksgit = ['https://github.com/gersonhiggins/gersonhiggins.github.io', 'https://github.com/gersonhiggins/math-magicians', 'https://github.com/gersonhiggins/budget-app', 'https://github.com/ahmedeid6842/book_an_appointment_frontend'];
+const linksgit = ['https://github.com/gersonhiggins/food-events', 'https://github.com/gersonhiggins/math-magicians', 'https://github.com/gersonhiggins/budget-app', 'https://github.com/ahmedeid6842/book_an_appointment_frontend'];
 const descriptions = ['Overall, the website serves as a virtual marketplace for food enthusiasts, connecting them with a diverse range of culinary experiences and fostering a community around food appreciation, exploration, and enjoyment.',
   'Calculators can be used for a wide range of applications, from simple calculations in everyday life to complex calculations in fields such as engineering, finance, and science. They provide a convenient and efficient way to perform mathematical operations quickly and accurately.',
   'Overall, the Budget App aims to simplify expense tracking, budget management, and financial decision-making for users. It leverages Ruby on Rails for the backend functionality and CSS for styling, providing an efficient and visually appealing user experience.',
