@@ -20,26 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Gerson Higgins",
+  title: "Hi all, I'm Gerson",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Ruby & Rails and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1uFWULU4ZuOwSsz9bT1RO_yf37ZuqyJNSaLc6EQdHYdA/edit?tab=t.0", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/gersonhiggins",
+  linkedin: "https://www.linkedin.com/in/gersonh/",
+  gmail: "gersonhiggins28@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -104,18 +100,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +110,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Simon Bolivar University",
+      logo: require("./assets/images/usb-logo-clipart-xl.png"),
+      subHeader: "Degree on Physics",
+      duration: "2014 - 2018",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "",
+        ""
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Microverse",
+      logo: require("./assets/images/microverse.jpg"),
+      subHeader: "Full Stack Software Developer",
+      duration: "2023 - 2024",
+      desc: "",
+      descBullets: [""]
     }
   ]
 };
@@ -212,19 +196,23 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Some Projects that I have worked on",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/cima.png"),
+      projectName: "Cima Bar Landing Page",
+      projectDesc: "React application for a restaurant bar in Venezuela",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "http://gersonhiggins.github.io/cima-bar/"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/gersonhiggins/cima-bar"
         }
-        //  you can add extra buttons here.
+         //  you can add extra buttons here.
       ]
     },
     {
@@ -252,51 +240,82 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Microverse Software Development Program",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Students earn this credential after working through 1500+ hours of remote pair programming, learning to code with teams from around the world.",
+      image: require("./assets/images/fullstackcertificate.webp"),
+      imageAlt: "Full Stack developer Certificate",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certificate",
+          url: "http://credential.net/05a35146-b0b1-47c9-8ce7-6a13e3c1a7cb#acc.wx1TNKYC"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Microverse Ruby on Rails Module",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Students earn this credential upon demonstrating mastery of Ruby on Rails by building multiple real-world Rails applications alongside software developers from all over the world.",
+      image: require("./assets/images/rubyonrails.webp"),
+      imageAlt: "Ruby on Rails Certificate",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certificate",
+          url: "https://www.credential.net/9aa5bcb8-44c5-4de2-b341-248bb58ec6df#acc.zRcBrGkp"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Microverse Ruby/Databases Module",
+      subtitle: "Students earn this credential after demonstrating thorough and complete understanding of Ruby and databases by building multiple projects while collaborating and pair programming remotely with developers across the world.",
+      image: require("./assets/images/ruby.webp"),
+      imageAlt: "Ruby Certificate",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+          name: "Certificate",
+          url: "https://www.credential.net/67b66e65-6d06-445e-8ded-f45b6bdee331#acc.6dUILfz3"
+        },
+
+      ]
+    },
+    {
+      title: "Microverse React and Redux Module",
+      subtitle: "Students earn this credential after demonstrating thorough understanding and mastery of React and Redux. Over the course of this module, students build and develop multiple projects using React and Redux, working both independently and while remotely pair-programming.",
+      image: require("./assets/images/reactredux.webp"),
+      imageAlt: "React and Redux Certificate",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://www.credential.net/cd4457d2-b222-4e02-adc5-53be9e253a45#acc.uQfvZSRK"
+        },
+
+      ]
+    },
+    {
+      title: "Microverse JavaScript Module",
+      subtitle: "Students earn this credential after demonstrating understanding and mastery of JavaScript. During the course of this module, they build several projects using JavaScript while pair-programming remotely with an international team of software developers.",
+      image: require("./assets/images/javas.webp"),
+      imageAlt: "Java Script Certificate",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://www.credential.net/c6ade591-c867-4d58-92a7-a1bc8e590891#acc.ISpvY5n1"
+        },
+
+      ]
+    },
+        {
+      title: "Microverse Html/CSS Module",
+      subtitle: "Students earn this credential after demonstrating industry standard HTML and CSS skills, achieved working on remote pair programming with teams from around the world.",
+      image: require("./assets/images/htmlcss.webp"),
+      imageAlt: "Html/Css Certificate",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://www.credential.net/34cc0bb8-adcf-4a17-94e3-c3846e114a6a#acc.he74WuBL"
+        },
+
       ]
     }
   ],
@@ -372,8 +391,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1 804-608-0072",
+  email_address: "gersonhiggins28@gmail.com"
 };
 
 // Twitter Section
@@ -383,7 +402,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
