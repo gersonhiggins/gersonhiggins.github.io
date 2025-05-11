@@ -45,16 +45,21 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
+  subTitle: "PASSIONATE FULL STACK DEVELOPER EXPLORING INNOVATIVE TECHNOLOGIES AND BUILDING IMPACTFUL SOLUTIONS",
+skills: [
+  emoji(
+    "⚡ Build dynamic and responsive user interfaces using React.js and modern JavaScript libraries"
+  ),
+  emoji(
+    "⚡ Develop robust back-end systems and RESTful APIs with Ruby on Rails"
+  ),
+  emoji(
+    "⚡ Seamlessly integrate third-party services and APIs to enhance application functionality"
+  ),
+  emoji(
+    "⚡ Optimize performance and scalability for full-stack web applications"
+  )
+],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -85,10 +90,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
@@ -97,9 +98,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "ruby on rails",
+      fontAwesomeClassname: "fa-solid fa-gem"
     },
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -116,8 +118,8 @@ const educationInfo = {
       duration: "2014 - 2018",
       desc: "",
       descBullets: [
-        "",
-        ""
+        "Developed strong analytical and problem-solving skills through coursework in advanced mathematics and physics.",
+        "Collaborated with peers on group projects, enhancing teamwork and communication skills."
       ]
     },
     {
@@ -126,7 +128,11 @@ const educationInfo = {
       subHeader: "Full Stack Software Developer",
       duration: "2023 - 2024",
       desc: "",
-      descBullets: [""]
+      descBullets: [
+        "Completed 1300+ hours of hands-on coding, mastering React, Ruby on Rails, and PostgreSQL.",
+        "Collaborated with international teams on 30+ projects, adhering to Agile methodologies.",
+        "Gained expertise in remote pair programming, Git workflows, and test-driven development (TDD)."
+      ]
     }
   ]
 };
@@ -216,13 +222,17 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/mathmagicians.png"),
+      projectName: "Math Magicians",
+      projectDesc: "A simple yet powerful web-based calculator built using React.js. This application allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://gersonhiggins.github.io/math-magicians"
+        },
+                {
+          name: "Github",
+          url: "https://github.com/gersonhiggins/math-magicians"
         }
       ]
     }
@@ -391,7 +401,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1 804-608-0072",
+  number: "+1 804-698-0072",
   email_address: "gersonhiggins28@gmail.com"
 };
 

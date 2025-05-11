@@ -82,7 +82,7 @@
   transition: 0.2s ease-in;
 }
 
-.project-image:nth-child(1) .card-image {
+.project-image.dark-mode:nth-child(1) .card-image {
   filter: brightness(0) invert(1);
 }
 @media (max-width: 768px) {
