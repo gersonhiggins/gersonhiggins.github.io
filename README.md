@@ -142,7 +142,7 @@ Make sure you have the following installed:
 ---
 
 ## 🙏 Acknowledgment
-Special thanks to [https://github.com/saadpasta](Saad Pasta) for providing the portfolio template that served as the foundation for this project.
+Special thanks to [Saad Pasta](https://github.com/saadpasta) for providing the portfolio template that served as the foundation for this project.
 
 
 ## 📬 Contact
