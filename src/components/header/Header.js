@@ -17,7 +17,7 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.hidden; 
+  const viewOpenSource = openSource.hidden;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.hidden;

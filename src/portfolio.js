@@ -45,7 +45,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "PASSIONATE FULL STACK DEVELOPER EXPLORING INNOVATIVE TECHNOLOGIES AND BUILDING IMPACTFUL SOLUTIONS",
+  subTitle:
+    "PASSIONATE FULL STACK DEVELOPER EXPLORING INNOVATIVE TECHNOLOGIES AND BUILDING IMPACTFUL SOLUTIONS",
   skills: [
     emoji(
       "⚡ Build dynamic and responsive user interfaces using React.js and modern JavaScript libraries"
@@ -100,8 +101,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "ruby on rails",
       fontAwesomeClassname: "fa-solid fa-gem"
-    },
-
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -224,7 +224,8 @@ const bigProjects = {
     {
       image: require("./assets/images/mathmagicians.png"),
       projectName: "Math Magicians",
-      projectDesc: "A simple yet powerful web-based calculator built using React.js. This application allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.",
+      projectDesc:
+        "A simple yet powerful web-based calculator built using React.js. This application allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.",
       footerLink: [
         {
           name: "Visit Website",
@@ -259,7 +260,7 @@ const achievementSection = {
         {
           name: "Certificate",
           url: "http://credential.net/05a35146-b0b1-47c9-8ce7-6a13e3c1a7cb#acc.wx1TNKYC"
-        },
+        }
       ]
     },
     {
@@ -278,54 +279,54 @@ const achievementSection = {
 
     {
       title: "Microverse Ruby/Databases Module",
-      subtitle: "Students earn this credential after demonstrating thorough and complete understanding of Ruby and databases by building multiple projects while collaborating and pair programming remotely with developers across the world.",
+      subtitle:
+        "Students earn this credential after demonstrating thorough and complete understanding of Ruby and databases by building multiple projects while collaborating and pair programming remotely with developers across the world.",
       image: require("./assets/images/ruby.webp"),
       imageAlt: "Ruby Certificate",
       footerLink: [
         {
           name: "Certificate",
           url: "https://www.credential.net/67b66e65-6d06-445e-8ded-f45b6bdee331#acc.6dUILfz3"
-        },
-
+        }
       ]
     },
     {
       title: "Microverse React and Redux Module",
-      subtitle: "Students earn this credential after demonstrating thorough understanding and mastery of React and Redux. Over the course of this module, students build and develop multiple projects using React and Redux, working both independently and while remotely pair-programming.",
+      subtitle:
+        "Students earn this credential after demonstrating thorough understanding and mastery of React and Redux. Over the course of this module, students build and develop multiple projects using React and Redux, working both independently and while remotely pair-programming.",
       image: require("./assets/images/reactredux.webp"),
       imageAlt: "React and Redux Certificate",
       footerLink: [
         {
           name: "Certificate",
           url: "https://www.credential.net/cd4457d2-b222-4e02-adc5-53be9e253a45#acc.uQfvZSRK"
-        },
-
+        }
       ]
     },
     {
       title: "Microverse JavaScript Module",
-      subtitle: "Students earn this credential after demonstrating understanding and mastery of JavaScript. During the course of this module, they build several projects using JavaScript while pair-programming remotely with an international team of software developers.",
+      subtitle:
+        "Students earn this credential after demonstrating understanding and mastery of JavaScript. During the course of this module, they build several projects using JavaScript while pair-programming remotely with an international team of software developers.",
       image: require("./assets/images/javas.webp"),
       imageAlt: "Java Script Certificate",
       footerLink: [
         {
           name: "Certificate",
           url: "https://www.credential.net/c6ade591-c867-4d58-92a7-a1bc8e590891#acc.ISpvY5n1"
-        },
-
+        }
       ]
     },
     {
       title: "Microverse Html/CSS Module",
-      subtitle: "Students earn this credential after demonstrating industry standard HTML and CSS skills, achieved working on remote pair programming with teams from around the world.",
+      subtitle:
+        "Students earn this credential after demonstrating industry standard HTML and CSS skills, achieved working on remote pair programming with teams from around the world.",
       image: require("./assets/images/htmlcss.webp"),
       imageAlt: "Html/Css Certificate",
       footerLink: [
         {
           name: "Certificate",
           url: "https://www.credential.net/34cc0bb8-adcf-4a17-94e3-c3846e114a6a#acc.he74WuBL"
-        },
-
+        }
       ]
     }
   ],
