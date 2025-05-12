@@ -46,20 +46,20 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle: "PASSIONATE FULL STACK DEVELOPER EXPLORING INNOVATIVE TECHNOLOGIES AND BUILDING IMPACTFUL SOLUTIONS",
-skills: [
-  emoji(
-    "⚡ Build dynamic and responsive user interfaces using React.js and modern JavaScript libraries"
-  ),
-  emoji(
-    "⚡ Develop robust back-end systems and RESTful APIs with Ruby on Rails"
-  ),
-  emoji(
-    "⚡ Seamlessly integrate third-party services and APIs to enhance application functionality"
-  ),
-  emoji(
-    "⚡ Optimize performance and scalability for full-stack web applications"
-  )
-],
+  skills: [
+    emoji(
+      "⚡ Build dynamic and responsive user interfaces using React.js and modern JavaScript libraries"
+    ),
+    emoji(
+      "⚡ Develop robust back-end systems and RESTful APIs with Ruby on Rails"
+    ),
+    emoji(
+      "⚡ Seamlessly integrate third-party services and APIs to enhance application functionality"
+    ),
+    emoji(
+      "⚡ Optimize performance and scalability for full-stack web applications"
+    )
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -101,7 +101,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "ruby on rails",
       fontAwesomeClassname: "fa-solid fa-gem"
     },
-    
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -218,7 +218,7 @@ const bigProjects = {
           name: "Github",
           url: "https://github.com/gersonhiggins/cima-bar"
         }
-         //  you can add extra buttons here.
+        //  you can add extra buttons here.
       ]
     },
     {
@@ -230,7 +230,7 @@ const bigProjects = {
           name: "Visit Website",
           url: "https://gersonhiggins.github.io/math-magicians"
         },
-                {
+        {
           name: "Github",
           url: "https://github.com/gersonhiggins/math-magicians"
         }
@@ -315,7 +315,7 @@ const achievementSection = {
 
       ]
     },
-        {
+    {
       title: "Microverse Html/CSS Module",
       subtitle: "Students earn this credential after demonstrating industry standard HTML and CSS skills, achieved working on remote pair programming with teams from around the world.",
       image: require("./assets/images/htmlcss.webp"),
