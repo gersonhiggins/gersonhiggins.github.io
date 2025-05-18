@@ -51,22 +51,25 @@ Make sure you have the following installed:
 
 ### Installation
 
-1. **Clone the repository**  
+1. **Clone the repository**
+
    ```bash
    git clone https://github.com/gersonhiggins/portfolio.git
    ```
 
-2. **Navigate to the project directory**  
+2. **Navigate to the project directory**
+
    ```bash
    cd portfolio
    ```
 
-3. **Install dependencies**  
+3. **Install dependencies**
+
    ```bash
    npm install
    ```
 
-4. **Start the development server**  
+4. **Start the development server**
    ```bash
    npm start
    ```
@@ -76,10 +79,12 @@ Make sure you have the following installed:
 ## ✏️ How to Use
 
 1. Open the `portfolio.js` file to customize your content:
+
    - Update your **name**, **skills**, **projects**, and **social links**.
    - Modify **education** and **work experience** as needed.
 
 2. To change the theme or color scheme:
+
    - Edit `_globalColor.scss` located in the `src` directory.
 
 3. To add your resume:
@@ -99,13 +104,13 @@ Make sure you have the following installed:
 
 ## 🗂 Portfolio Sections
 
-- ✅ Summary and About Me  
-- ✅ Skills  
-- ✅ Education  
-- ✅ Work Experience  
-- ✅ Projects  
-- ✅ Achievements & Certifications  
-- ✅ Contact Information  
+- ✅ Summary and About Me
+- ✅ Skills
+- ✅ Education
+- ✅ Work Experience
+- ✅ Projects
+- ✅ Achievements & Certifications
+- ✅ Contact Information
 
 ---
 
@@ -113,12 +118,14 @@ Make sure you have the following installed:
 
 ### Deploying to GitHub Pages
 
-1. **Install the gh-pages package**  
+1. **Install the gh-pages package**
+
    ```bash
    npm install --save gh-pages
    ```
 
 2. **Add the following scripts to your `package.json`**:
+
    ```json
    "scripts": {
      "predeploy": "npm run build",
@@ -126,7 +133,7 @@ Make sure you have the following installed:
    }
    ```
 
-3. **Deploy**  
+3. **Deploy**
    ```bash
    npm run deploy
    ```
@@ -142,14 +149,14 @@ Make sure you have the following installed:
 ---
 
 ## 🙏 Acknowledgment
-Special thanks to [Saad Pasta](https://github.com/saadpasta) for providing the portfolio template that served as the foundation for this project.
 
+Special thanks to [Saad Pasta](https://github.com/saadpasta) for providing the portfolio template that served as the foundation for this project.
 
 ## 📬 Contact
 
 Feel free to reach out for collaboration or inquiries:
 
-- 📧 **Email**: [gahg.10gerson@gmail.com](mailto:gahg.10gerson@gmail.com)  
-- 🌐 **Portfolio**: [gersonhiggins.github.io](https://gersonhiggins.github.io)  
-- 💼 **LinkedIn**: [linkedin.com/in/gersonh](https://www.linkedin.com/in/gersonh/)  
+- 📧 **Email**: [gahg.10gerson@gmail.com](mailto:gahg.10gerson@gmail.com)
+- 🌐 **Portfolio**: [gersonhiggins.github.io](https://gersonhiggins.github.io)
+- 💼 **LinkedIn**: [linkedin.com/in/gersonh](https://www.linkedin.com/in/gersonh/)
 - 🐙 **GitHub**: [github.com/gersonhiggins](https://github.com/gersonhiggins)
