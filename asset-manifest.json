@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.842302a3.css",
-    "main.js": "/static/js/main.48457815.js",
+    "main.js": "/static/js/main.f1710aa7.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/static/js/769.bda0d7b7.chunk.js",
+    "static/media/food-events.png": "/static/media/food-events.9fb6e03fac5d8710faa9.png",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/cima.png": "/static/media/cima.26ecb23e160db36e6642.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -14,6 +15,7 @@
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/usb-logo-clipart-xl.png": "/static/media/usb-logo-clipart-xl.4187c132990387029fc2.png",
+    "static/media/capstone.png": "/static/media/capstone.3991e36b7de2af3c0af0.png",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/GersonHigginsResUpdated.pdf": "/static/media/GersonHigginsResUpdated.43c54824f4c8c4fac8a1.pdf",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -36,7 +38,7 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/index.html",
     "main.842302a3.css.map": "/static/css/main.842302a3.css.map",
-    "main.48457815.js.map": "/static/js/main.48457815.js.map",
+    "main.f1710aa7.js.map": "/static/js/main.f1710aa7.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -44,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.842302a3.css",
-    "static/js/main.48457815.js"
+    "static/js/main.f1710aa7.js"
   ]
 }
