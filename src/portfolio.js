@@ -236,7 +236,86 @@ const bigProjects = {
           url: "https://github.com/gersonhiggins/math-magicians"
         }
       ]
-    }
+    },
+    {
+      image: require("./assets/images/capstone.png"),
+      projectName: "CapStone Finance App",
+      projectDesc:
+        "A Web application used to filter from a list of financial statements, built with React and Redux.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://gersonhiggins.github.io/capstone-financy"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/gersonhiggins/capstone-financy"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/food-events.png"),
+      projectName: "Food Events",
+      projectDesc:
+        "Sample of a website for food events, responsive on all devices, built with HTML, CSS and JavaScript.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://gersonhiggins.github.io/food-events/"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/gersonhiggins/food-events"
+        }
+      ],
+    }, 
+    {
+      image: require("./assets/images/casagrande.png"),
+      projectName: "Casa Grande Eventos",
+      projectDesc:
+        "Website landing page for an event local designed with an budget generator",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://gersonhiggins.github.io/events-website/"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/gersonhiggins/events-website"
+        }
+      ]
+    },    {
+      image: require("./assets/images/alehig.png"),
+      projectName: "Alehiggins.design Portfolio",
+      projectDesc:
+        "Porfolio website Designed with react - contact mail implemented",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://alehiggins.github.io"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/alehiggins/alehiggins.github.io"
+        }
+      ]
+    },
+        {
+      image: require("./assets/images/image.png"),
+      projectName: "Lommo - Mucho mas que rico!",
+      projectDesc:
+        "Landing Website for an small business owner to display menu and contact info",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://gersonhiggins.github.io/lommo/"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/gersonhiggins/lommo"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
