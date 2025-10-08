@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.842302a3.css",
-    "main.js": "/static/js/main.72f91109.js",
+    "main.css": "/static/css/main.4c887c72.css",
+    "main.js": "/static/js/main.ae76b858.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/static/js/769.bda0d7b7.chunk.js",
+    "static/media/side6.jpeg": "/static/media/side6.e9ea1f9d72524fc11d85.jpeg",
     "static/media/casagrande.png": "/static/media/casagrande.c7f492fdee71f6952f65.png",
+    "static/media/side1.jpeg": "/static/media/side1.00b40ab10c4449ba1649.jpeg",
     "static/media/image.png": "/static/media/image.f99d299db1202690bdac.png",
+    "static/media/side4.jpeg": "/static/media/side4.0edd198b6ff57df9bf9b.jpeg",
+    "static/media/side2.jpeg": "/static/media/side2.f6b550989d1816b2d74b.jpeg",
     "static/media/food-events.png": "/static/media/food-events.9fb6e03fac5d8710faa9.png",
     "static/media/alehig.png": "/static/media/alehig.c459f5eec662c34b7e6f.png",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/cima.png": "/static/media/cima.26ecb23e160db36e6642.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/side5.jpeg": "/static/media/side5.80f4dc40166c363a80d4.jpeg",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/side3.jpeg": "/static/media/side3.e77073f133803dd67a52.jpeg",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -40,15 +46,15 @@
     "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/index.html",
-    "main.842302a3.css.map": "/static/css/main.842302a3.css.map",
-    "main.72f91109.js.map": "/static/js/main.72f91109.js.map",
+    "main.4c887c72.css.map": "/static/css/main.4c887c72.css.map",
+    "main.ae76b858.js.map": "/static/js/main.ae76b858.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.842302a3.css",
-    "static/js/main.72f91109.js"
+    "static/css/main.4c887c72.css",
+    "static/js/main.ae76b858.js"
   ]
 }
