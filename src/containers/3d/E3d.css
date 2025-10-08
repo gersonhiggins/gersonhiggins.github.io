@@ -1,0 +1,123 @@
+.outside {
+    perspective: 1000px;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.container {
+        background-color: rgba(0, 0, 0, 0.196);
+        width: 100%;
+}
+.cube {
+
+    transform-style: preserve-3d;
+    position: relative;
+    width: 500px;
+    height: 500px;
+ 
+}
+
+.inside {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.inside.rigth-side {
+    transform: translateX(250px) rotateY(90deg);
+    background-image: url('../../assets/images/side1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 2px rgba(70, 0, 128, 0.641);
+}
+
+.inside.left-side {
+    transform: translateX(-250px) rotateY(-90deg);
+        background-image: url('../../assets/images/side2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 2px rgba(128, 0, 0, 0.641);
+}
+
+.inside.top-side {
+    transform: translateY(-250px) rotateX(90deg);
+            background-image: url('../../assets/images/side3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 21, 0.641);
+
+}
+
+.inside.bottom-side {
+    transform: translateY(250px) rotateX(-90deg);
+            background-image: url('../../assets/images/side4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 2px rgba(16, 189, 0, 0.641);
+}
+
+.inside.front-side {
+    transform: translateZ(250px);
+            background-image: url('../../assets/images/side5.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 2px rgba(0, 47, 128, 0.641);
+}
+
+.inside.back-side {
+    transform: translateZ(-250px);
+            background-image: url('../../assets/images/side6.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 2px rgba(97, 45, 0, 0.641);
+}
+
+
+@keyframes rotate-cube {
+    0% {
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+
+    25% {
+        transform: rotateX(-45deg) rotateY(45deg);
+    }
+
+    50% {
+        transform: rotateX(-45deg) rotateY(-45deg);
+    }
+
+    75% {
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+
+    100% {
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+}
+
+.cube {
+    animation: rotate-cube 20s infinite linear;
+}
+
+@media (max-width:900px) {
+    .outside {
+        transform: scale(0.7);
+        overflow: visible;
+    }
+}
+
+@media (max-width:600px) {
+    .outside {
+        transform: scale(0.3);
+        overflow: visible;
+    }
+}
